@@ -46,10 +46,10 @@ class userController extends Controller
     	]);
         if($user){
             $data['status']=true;
-            $data['message']="Sukses Menambahkan Barang";
+            $data['message']="Sukses Menambahkan User";
         }else{
             $data['status']=false;
-            $data['message']=['error'=>["Gagal Menambahkan Barang"]];
+            $data['message']=['error'=>["Gagal Menambahkan User"]];
         }
         return response()->json($data);
     	$token = JWTAuth::fromUser($user);

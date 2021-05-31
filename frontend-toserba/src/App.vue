@@ -18,6 +18,9 @@
         <li class="nav-item" v-if="level=='kasir'">
           <router-link class="nav-link" to="/Barang">Barang</router-link>
         </li>
+         <li class="nav-item" v-if="level=='kasir'">
+          <router-link class="nav-link" to="/RegisterAdmin">Tambah Admin</router-link>
+        </li>
 
         <li class="nav-item">
           <router-link class="nav-link" to="/" @click="logout()">Logout</router-link>
