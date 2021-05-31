@@ -11,6 +11,7 @@ import EditBarang from './components/EditBarang.vue'
 import Login from './components/Login';
 import Register from './components/Register.vue'
 import PelangganBarang from './components/PelangganBarang.vue';
+import RegisterAdmin from './components/RegisterAdmin.vue';
 
 const router = createRouter({
 	history:createWebHistory(),
@@ -22,6 +23,7 @@ const router = createRouter({
 		{path:'/EditBarang/:id_barang', name:"EditBarang", component:EditBarang},
 		{path:'/PelangganBarang', name:"PelangganBarang", component:PelangganBarang},
 		{path:'/Register', name:"Register", component:Register},
+		{path:'/RegisterAdmin', name:"RegisterAdmin", component:RegisterAdmin},
 	],
 	base:'/'
 })
